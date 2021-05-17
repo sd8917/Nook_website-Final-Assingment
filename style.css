@@ -1,6 +1,69 @@
 body,h1,h2,h3,h4,h5,h6,p{
-    margin: 0;;
+    margin: 0;
+    margin: 50px;/*remove with shadow -text */
 }
+/*shadow -text */
+#shadow-text{
+    position: relative;
+}
+#shadow-text h1{
+    text-transform: uppercase;
+    
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -5px;
+    opacity: 0.02;
+    font-size: 80px;
+}
+#shadow-text h3{
+    position: absolute;
+    margin-top: -2px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/*shadow -text end */
+
+/* our work section start*/
+#our-work-wrapper-section  .work-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 30%;
+    height: 30%;
+}
+
+.card>img{
+    width: 100%;  
+}
+
+#hover-visible-view-project{
+    display: none;
+    background-image: linear-gradient(45deg, #e47312, #ff6361);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+}
+
+#hover-visible-view-project h3{
+    position: absolute;
+}
+
+.card:hover{
+    
+}
+
+
+
+
+
+/* our work section end */
+
+
+
 
 /* CARD BLOG START*/
 #card-section-wrapper{
@@ -70,28 +133,89 @@ body,h1,h2,h3,h4,h5,h6,p{
 }
 .team-card-wrapper{
     width: 20%;
-    border: 2px solid palegreen;
     position: relative;
 }
 .team-card-wrapper img{
     width: 100%;
 }
-
 .team-card-social-link{
     width: 60px;
+    height: 20px;
     height: 150px;
     background-color: #E47312;
     color: white;
-
     position: absolute;
     bottom: 0;
     right: 0;
 }
-
+.social-icon-wrapper{
+    height: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;  
+}
+.social-link-divider{
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;  
+}
 .team-card-social-link img{
-
     display: flex;
     flex-direction: column;
     width: 16px;
     height: 16px;
+    padding-bottom: 10px;
+}
+
+
+
+/*footer-wrapper*/
+
+
+
+.companies-logo-wrapper{
+    background-image: linear-gradient(45deg, #e47312, #ff6361);
+    display: flex;
+    background-size: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-wrapper img{
+    width: 150px;
+    height: 80px;
+}
+
+.footer{
+    background-color: #0a1229;;
+    color:white;
+    margin: 0 40px;
+    box-sizing: border-box;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+}
+.main-content  .main-content-about p{
+    width: 30%;
+}
+.footer-baseline{
+    display: flex;
+}
+
+
+.footer-baseline div img{
+    width: 100%;
+    margin: 20px;
+    
+}
+.footer-baseline .img-wrapper-right{
+    background-image: linear-gradient(45deg, #e47312, #ff6361);
+    width: 60px;
+    height: 40px;
+
+}
+.main-content-services ul{
+    list-style-type: none;
 }
