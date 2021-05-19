@@ -1,6 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+
 body,h1,h2,h3,h4,h5,h6,p{
     margin: 0;
-    margin: 50px;/*remove with shadow -text */
+    
+}
+body{
+    margin: 50px;
 }
 /*shadow -text */
 #shadow-text{
@@ -8,31 +15,191 @@ body,h1,h2,h3,h4,h5,h6,p{
 }
 #shadow-text h1{
     text-transform: uppercase;
-    
     position: absolute;
     margin-top: -50px;
     margin-left: -5px;
-    opacity: 0.02;
-    font-size: 80px;
-}
-#shadow-text h3{
-    position: absolute;
-    margin-top: -2px;
-    font-size: 40px;
-    margin-right: 10px;
-}
+    opacity: 0.05;
+    font-size: 100px;
 
+}
+#shadow-text > p{
+    position: absolute;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-left: 40px;
+
+}
 /*shadow -text end */
 
-/* our work section start*/
+
+
+
+/*OUR SERVICE SECTION START */
+
+#our-specialization-section-wrapper{
+
+   
+}
+
+.section-header-wrapper{
+    text-transform: uppercase;
+    display: flex;
+}
+
+.sevices-categories{
+    display: flex;
+    margin: 100px 40px;
+}
+
+.services{
+    width: 25%;
+    padding:20px;
+    box-sizing: border-box;
+}
+.services>img{
+   height: 80px;
+   margin-bottom: 20px;
+}
+
+.services>h3{
+    margin-top: 0px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.services>p{
+    margin-bottom: 15px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+}
+.learn-more-wrapper{
+    margin-top: 30px;
+}
+.learn-more-wrapper a{
+   padding-bottom: 10px;
+   text-decoration: none;
+   border-bottom: 2px solid red;
+   box-sizing: border-box;
+   color: #919197;
+}
+
+
+/*OUR SERVICE SECTION END */
+
+
+
+
+
+/*about-section start*/
+#about-section-wrapper{
+    display: flex;
+}
+#about-section-wrapper > .section-header-wrapper{
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+.about-img-wrapper-left{
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+.about-img-wrapper-left > img{
+    width: 100%;
+}
+
+.para-header-wrapper-right{
+    width: 50%;
+    padding: 80px 30px;
+}
+
+.para-header-wrapper-right >p{
+    margin-bottom: 15px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+} 
+
+.meet-team-link{
+    margin-top: 20px;
+}
+.meet-team-link > a{
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    padding-bottom: 6px;
+    color: #919197;
+}
+/*about-section-end */
+
+
+
+
+
+/*follow counter sta.. start */
+
+#counter-wrapper{
+    margin: 50px 0;
+    display:flex;
+    justify-content: space-around;
+}
+.number-follower{
+    color:#b38965;
+}
+.number-follower-wrapper{
+    width:25%;
+}
+.number-follower-wrapper >p{
+    margin-bottom: 15px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+    
+}
+.number-follower{
+    margin-bottom: 10px;
+    color: #e47312;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 500;
+}
+
+
+/*follow counter sta.. start */
+
+
+/* work-profession-testimonials-wrapper */
+#work-profession-testimonials-wrapper{
+    background-color: #F7F8FC;
+    height: 100vh;
+}
+.our-work-projects{
+    
+    border: 1px solid rebeccapurple;
+    box-shadow: 0 0 4px 4px #ccc;
+    
+}
+
+
+
+
+/* end work-profession-testimonials-wrapper */
+
+/* our work card section start*/
 #our-work-wrapper-section  .work-card-wrapper{
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-evenly;
 }
 .card{
     width: 30%;
     height: 30%;
+    position: relative;
 }
 
 .card>img{
@@ -40,21 +207,37 @@ body,h1,h2,h3,h4,h5,h6,p{
 }
 
 #hover-visible-view-project{
-    display: none;
     background-image: linear-gradient(45deg, #e47312, #ff6361);
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    position: relative;
-}
-
-#hover-visible-view-project h3{
     position: absolute;
-}
+    z-index: 1;
+    display: none;
+    font-size: 10px;
+    font-weight: 100;
 
-.card:hover{
+    /*center the div */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.card:hover > #hover-visible-view-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+    animation-name: hover-delay;
     
 }
+.card:hover > img{
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+
 
 
 
