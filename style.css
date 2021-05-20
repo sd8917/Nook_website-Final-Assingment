@@ -8,6 +8,7 @@ body,h1,h2,h3,h4,h5,h6,p{
 }
 body{
     margin: 50px;
+    font-family: Dosis, sans-serif;;
 }
 /*shadow -text */
 #shadow-text{
@@ -146,6 +147,7 @@ body{
     margin: 50px 0;
     display:flex;
     justify-content: space-around;
+    padding-bottom: 60px;    
 }
 .number-follower{
     color:#b38965;
@@ -169,37 +171,28 @@ body{
     font-weight: 500;
 }
 
-
 /*follow counter sta.. start */
 
 
 /* work-profession-testimonials-wrapper */
+/*  .....  WORKING ON IT .... */
 #work-profession-testimonials-wrapper{
     background-color: #F7F8FC;
-    height: 100vh;
-}
-.our-work-projects{
-    
-    border: 1px solid rebeccapurple;
-    box-shadow: 0 0 4px 4px #ccc;
-    
+    height: 300vh;
 }
 
-
-
-
-/* end work-profession-testimonials-wrapper */
-
-/* our work card section start*/
-#our-work-wrapper-section  .work-card-wrapper{
+                /* sub-section our work card section start*/
+.work-card-wrapper{
+    margin-top: 120px;
     display: flex;
-
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .card{
-    width: 30%;
-    height: 30%;
+    width: 32%;
+    height: 32%;
     position: relative;
+    padding: 10px 0px;
 }
 
 .card>img{
@@ -236,14 +229,96 @@ body{
 .card:hover > img{
     background-color: rgba(0, 0, 0, 0.3)
 }
+                /* sub-section our work section end */
+
+.image-slider-work-project{
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(72deg
+, #e47312, rgba(255, 99, 97, 0.78)), url(./img/banner-slider.jpg);
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #e47312;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    margin-bottom: 100px;
+
+}
+.image-slider-text-wrapper  h3{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.image-slider-text-wrapper > p{
+    color: white;
+    text-align: center;
+}
+.image-slider-text-wrapper > a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* sub-section professionals start */
+
+#professional-section-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.team-card-wrapper{
+    width: 20%;
+    position: relative;
+    padding-top: 100px;
+}
+.team-card-wrapper img{
+    width: 100%;
+}
+.team-card-social-link{
+    width: 60px;
+    height: 20px;
+    height: 150px;
+    background-color: #E47312;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.social-icon-wrapper{
+    height: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;  
+}
+.social-link-divider{
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;  
+}
+.team-card-social-link img{
+    display: flex;
+    flex-direction: column;
+    width: 16px;
+    height: 16px;
+    padding-bottom: 10px;
+}
+
+
+/* sub-section professionals end */
+
+
+
+/* end work-profession-testimonials-wrapper */
 
 
 
 
 
-
-
-/* our work section end */
 
 
 
@@ -254,11 +329,11 @@ body{
     justify-content: space-evenly;
 }
 .card-wrapper{
-    
     width: 30%;
     position: relative;
     background-image: linear-gradient(158deg, #e47312, #ff6361);
     color: white;
+    margin:120px 0;
 }
 .date-wrapper{
     position: absolute;
@@ -304,71 +379,21 @@ body{
 /* CARD BLOG END*/
 
 
-
-/* professionals start */
-
-
-/* professionals end */
-
-#professional-section-wrapper{
-    display: flex;
-    justify-content: space-around;
-}
-.team-card-wrapper{
-    width: 20%;
-    position: relative;
-}
-.team-card-wrapper img{
-    width: 100%;
-}
-.team-card-social-link{
-    width: 60px;
-    height: 20px;
-    height: 150px;
-    background-color: #E47312;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.social-icon-wrapper{
-    height: 30px;
-    padding: 20px;
-    box-sizing: border-box;
-    cursor: pointer;  
-}
-.social-link-divider{
-    height: 1px;
-    background-color: lightgray;
-    width: 100%;  
-}
-.team-card-social-link img{
-    display: flex;
-    flex-direction: column;
-    width: 16px;
-    height: 16px;
-    padding-bottom: 10px;
-}
-
-
-
-/*footer-wrapper*/
-
-
-
+/*footer-wrapper start*/
 .companies-logo-wrapper{
     background-image: linear-gradient(45deg, #e47312, #ff6361);
     display: flex;
-    background-size: 100px;
     align-items: center;
     justify-content: space-around;
+    padding: 5% 2%;
+    box-sizing: border-box;
+    color:white;
 }
 
 .img-wrapper img{
     width: 150px;
-    height: 80px;
+    height: 80px; 
 }
-
 .footer{
     background-color: #0a1229;;
     color:white;
@@ -377,12 +402,54 @@ body{
 }
 
 .main-content{
+    padding: 80px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.main-content  .main-content-about p{
+.main-content-about, .main-content-services,.main-content-contact{
     width: 30%;
 }
+.main-content-about-title{
+    margin-bottom: 30px;
+    padding-right: 14px;
+    
+}
+.main-content-about >p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    
+}
+.main-content-about > h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-content-about-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.main-content-about-title-line{
+    position: absolute;
+    left: 110px;
+    top: 8px;
+    width: 50%;
+    height: 1px;
+    background-color: #ff6361;
+}
+.main-content-services-menu > a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 12px;
+    
+}
+.main-content-services-menu-item > h3{
+    margin-bottom: 20px;
+    
+}
+
 .footer-baseline{
     display: flex;
 }
@@ -401,4 +468,9 @@ body{
 }
 .main-content-services ul{
     list-style-type: none;
+}
+
+.contact-menu{
+    display: flex;
+    margin-bottom: 15px;
 }
