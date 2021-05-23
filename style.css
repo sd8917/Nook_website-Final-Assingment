@@ -146,9 +146,15 @@ body{
     color:white;  
     font-weight: 500;
     box-sizing: border-box;
-    margin-left: 10px; 
+    opacity : 1;
+    transition: opacity 1s ease-out 50ms;
 }
-  
+.get-free-quote:hover{
+    opacity: 0.8;
+}
+
+
+
 .btn-btn{
     margin-top: 15px;
     background-color:#E47312;
@@ -159,6 +165,10 @@ body{
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: opacity 0.5s ease-out 10ms;
+}
+.btn-btn:hover{
+    opacity: 0.8;
 }
   
 .header-card-social-link{
