@@ -48,7 +48,7 @@ body{
     position:relative;
     background-size: auto, cover;
     background-attachment: scroll, fixed;
-    min-height: 100vh;
+    min-height: 85vh;
     
     box-sizing:border-box;
     padding: 40px;
@@ -136,8 +136,8 @@ body{
 }
   
   .side-overlay-landing-section{
-    width: 70%;
-    height: 30%;
+    min-width: 75%;
+    min-height:40%;
     color:white;
     display:flex;
     justify-content: space-evenly;
@@ -270,8 +270,10 @@ body{
     width: 100%;
 }
 
+
 .para-header-wrapper-right{
     width: 50%;
+    
     padding: 80px 30px;
 }
 
@@ -441,11 +443,10 @@ body{
 .team-card-wrapper{
     width: 20%;
     position: relative;
-    padding-top: 100px;
     box-shadow: 0 0 1px #ccc;
 }
 .team-card-wrapper img{
-    width: 100%;
+    width: 100%;s
 }
 .team-card-social-link{
     width: 60px;
