@@ -10,7 +10,7 @@ body,h1,h2,h3,h4,h5,h6,p{
     box-sizing: border-box;
 }
 body{
-    margin: 50px;
+    margin: 30px;
     font-family: Dosis, sans-serif;;
 }
 /*shadow -text */
@@ -36,58 +36,71 @@ body{
 }
 /*shadow -text end */
 
-
-
-
-
 /* landing section start here  */
 
-
-  .main-section{
-    margin: 30px;
-    box-sizing:border-box;
+.main-section{    
     margin-bottom: 20%;
-  }
+}
   #header-section{
     background-image: linear-gradient(76deg, rgba(193, 195, 204, 0.83) 35%, rgba(193, 195, 204, 0.28) 65%), url("./img/landing-section-home.jpg");
-   background-position: 0px 0px, 50% 0%; 
+    background-position: 0px 0px, 50% 0%; 
   
     position:relative;
     background-size: auto, cover;
     background-attachment: scroll, fixed;
-    height: 100vh;
+    min-height: 100vh;
     
     box-sizing:border-box;
     padding: 40px;
+    
   }
   .nav-bar{
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color:white;
     align-items: center;
     position:relative;
   }
   /*before psedo element watch it..*/
-  .logo-wrapper{
-    width:60px;
-    height:50px;
+.logo-wrapper{
+    width:100px;
+    height:0px;
     display:  flex;
     background-color:#E47312;
-  }
-  .menu-items{
+}
+.logo-wrapper > img{
+    min-width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+
+.menu-items{
     display:flex;
-    
-    
-  }
-  .menu-items a{
+}
+
+  /*   menu hover animation */  
+
+
+/*menu hove animatione ends */
+
+  .menu-items > a{
     color:black;
     text-decoration:none;
-    align-item: center;
+    display: inline-block;
+    padding: 31px 14px;
+    align-items: center;
+    color: #414147;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
   }
   .get-free-quote{
     background-color:#E47312;
-    widht:30px;
-    height:50px;
+    padding: 31px 14px;
+    color:white;
   }
   
   .btn-btn{
@@ -97,6 +110,30 @@ body{
     border:0;
   }
   
+  .header-card-social-link{
+      background-color: #0A1229; 
+      position: absolute;
+      right: 0;
+      bottom: 16%;
+      cursor: pointer;
+  }
+  .header-social-icon-wrapper{
+    width: 40px;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+  }
+  .header-social-icon-wrapper > img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.header-social-link-divider{
+    height: 0.5px;
+    background-color: lightgray;
+    width: 100%;  
+    margin-top: 10px;
+}
   
   .side-overlay-landing-section{
     width: 70%;
@@ -111,10 +148,10 @@ body{
     position: absolute;
     left: auto;
     top: auto;
-    right: -2.5%;
+   
     bottom: -83px;
     
-    padding: 15px 100px 5px 50px;
+    padding: 15px 10px 15px 40px;
     background-color: #e47312;
     background-image: linear-gradient(186deg, #e47312, #ff6361);
   }
@@ -122,11 +159,12 @@ body{
   .main-title{
     color:white;
    
-     display:flex;
+    display:flex;
     flex-direction:column;
     justify-content: space-around;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 40px;
   }
   .main-title > p{
     margin-bottom: 20px;
@@ -148,6 +186,7 @@ body{
   flex-direction: column;
   justify-content: space-around;
   letter-spacing: 1px;
+ 
 }
 
 
@@ -296,7 +335,7 @@ body{
 /*  .....  WORKING ON IT .... */
 #work-profession-testimonials-wrapper{
     background-color: #F7F8FC;
-    height: 350vh;
+    min-height: 350vh;
 }
 
                 /* sub-section our work card section start*/
@@ -403,6 +442,7 @@ body{
     width: 20%;
     position: relative;
     padding-top: 100px;
+    box-shadow: 0 0 1px #ccc;
 }
 .team-card-wrapper img{
     width: 100%;
@@ -418,8 +458,8 @@ body{
     right: 0;
 }
 .social-icon-wrapper{
-    height: 30px;
-    padding: 20px;
+    min-height: 30px;
+    padding: 10px;
     box-sizing: border-box;
     cursor: pointer;  
 }
@@ -431,8 +471,8 @@ body{
 .team-card-social-link img{
     display: flex;
     flex-direction: column;
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     padding-bottom: 10px;
 }
 
